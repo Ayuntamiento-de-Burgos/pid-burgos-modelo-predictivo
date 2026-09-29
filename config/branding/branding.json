@@ -1,0 +1,30 @@
+{
+  "_comment": "Personalización del destino. El frontal lee este fichero en runtime (no hace falta recompilar). Sustituir por los datos y assets del destino.",
+  "destino": {
+    "nombre": "PID · Modelo Predictivo",
+    "nombre_corto": "PID Predictivo",
+    "descripcion": "Predicción de afluencia turística por zonas basada en Prophet."
+  },
+  "colores": {
+    "primary": "#4b8312",
+    "primary_dark": "#264a03",
+    "accent": "#d5ecbe",
+    "text": "#3f413e",
+    "muted": "#6c757d",
+    "background": "#f6f7f4"
+  },
+  "assets": {
+    "logo": "assets/branding/logo.png",
+    "login_background": "assets/branding/login-background.jpg",
+    "favicon": "assets/branding/favicon.ico"
+  },
+  "textos": {
+    "login_titulo": "Modelo Predictivo de Afluencia",
+    "login_subtitulo": "Plataforma Inteligente de Destino",
+    "footer": "Financiado por la Unión Europea — NextGenerationEU"
+  },
+  "enlaces": {
+    "soporte": "mailto:soporte@example.org",
+    "web_destino": "https://www.example.org"
+  }
+}
