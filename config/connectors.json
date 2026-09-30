@@ -1,0 +1,24 @@
+{
+  "_comment": "Conectores = de dónde lee el modelo. El destino apunta aquí a SUS tablas/esquemas (las que alimenten sus propios conectores). Si una fuente no existe en el destino, pon el valor a null y el modelo la omite (los eventos y el respaldo meteo son opcionales; la afluencia es obligatoria).",
+
+  "input_schema": "silver_tourism",
+  "output_schema": "silver_tourism",
+
+  "tables": {
+    "afluencia_visitas": "seeketing_zone_visits",
+    "afluencia_zonas": "seeketing_zone",
+    "meteo": "aemetforecast",
+    "eventos_local": "eventos",
+    "eventos_regional": "jcyl_eventos",
+    "salida_predicciones": "predictions",
+    "salida_historico": "prediction_historic"
+  },
+
+  "meteo": {
+    "_comment": "Nombre de la estación meteorológica a filtrar (columna 'name' de la tabla meteo). null = sin filtro.",
+    "estacion": "BURGOS AEROPUERTO"
+  },
+
+  "read_enabled": true,
+  "write_enabled": true
+}

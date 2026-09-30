@@ -1,0 +1,18 @@
+# Entorno / secretos
+.env
+backend/env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+backend/results/
+
+# Node / Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# SO / editor
+.DS_Store
+Thumbs.db

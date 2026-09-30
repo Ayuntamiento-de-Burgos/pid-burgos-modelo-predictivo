@@ -1,0 +1,28 @@
+{
+  "_comment": "Zonas del destino y su mapeo a sensores de afluencia. PERFIL DE EJEMPLO: Burgos (9 zonas del pliego). Sustituir por las zonas y sensores del destino. 'modo': 'unico' (solo principal), 'principal_respaldo' (usa respaldo * factor_respaldo si falta el principal) o 'suma' (principal + respaldo con factores).",
+  "zones": [
+    { "num": 1, "nombre": "puente_santa_maria", "label": "Puente Santa María", "principal": "arco_santa_maria_exterior", "respaldo": "puente_de_santa_maria", "modo": "principal_respaldo", "factor_respaldo": 3.9426 },
+    { "num": 2, "nombre": "plaza_rey_san_fernando", "label": "Plaza del Rey San Fernando", "principal": "arco_santa_maria_exterior", "respaldo": "arco_santa_maria_interior", "modo": "principal_respaldo", "factor_respaldo": 1.0 },
+    { "num": 3, "nombre": "plaza_mayor_sombrereria", "label": "Plaza Mayor y Calle Sombrerería", "principal": "plaza_mayor", "respaldo": null, "modo": "unico" },
+    { "num": 4, "nombre": "calle_san_lorenzo", "label": "Calle San Lorenzo", "principal": "calle_san_lorenzo", "respaldo": null, "modo": "unico" },
+    { "num": 5, "nombre": "paseo_sierra_atapuerca", "label": "Paseo Sierra de Atapuerca", "principal": "paseo_atapuerca", "respaldo": "forum_evolucion_humana", "modo": "suma", "factor_sin_principal": 1.2696, "factor_sin_respaldo": 4.7096 },
+    { "num": 6, "nombre": "plaza_san_juan", "label": "Plaza San Juan", "principal": "monasterio_de_san_juan", "respaldo": "plaza_san_juan", "modo": "principal_respaldo", "factor_respaldo": 3.1442 },
+    { "num": 7, "nombre": "huerto_del_rey", "label": "Plaza Huerto del Rey", "principal": "huerto_del_rey", "respaldo": null, "modo": "unico" },
+    { "num": 8, "nombre": "parking_las_torres", "label": "Parking Las Torres-Gamonal", "principal": "parking_autocaravanas", "respaldo": null, "modo": "unico" },
+    { "num": 9, "nombre": "plaza_santa_teresa", "label": "Plaza Santa Teresa", "principal": "plaza_santa_teresa", "respaldo": null, "modo": "unico" }
+  ],
+  "sensor_coords": {
+    "arco_santa_maria_exterior": [42.339650, -3.704050],
+    "arco_santa_maria_interior": [42.339833, -3.704111],
+    "plaza_mayor": [42.341000, -3.701972],
+    "calle_san_lorenzo": [42.342136, -3.701176],
+    "paseo_atapuerca": [42.339542, -3.696354],
+    "forum_evolucion_humana": [42.339389, -3.698333],
+    "monasterio_de_san_juan": [42.342917, -3.695694],
+    "plaza_san_juan": [42.342852, -3.696646],
+    "huerto_del_rey": [42.342683, -3.702103],
+    "parking_autocaravanas": [42.356453, -3.671944],
+    "plaza_santa_teresa": [42.340470, -3.695425],
+    "puente_de_santa_maria": [42.339830, -3.703608]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "_comment": "Parámetros del modelo Prophet y del territorio. Editable por destino. Fechas en formato YYYY-MM-DD.",
+  "factor_k": 0.563,
+  "prophet_params": {
+    "changepoint_prior_scale": 0.10,
+    "seasonality_prior_scale": 5.0,
+    "seasonality_mode": "multiplicative",
+    "daily_seasonality": true,
+    "weekly_seasonality": true,
+    "yearly_seasonality": false
+  },
+  "regressors": [
+    "temp_c", "lluvia", "dia_soleado", "hr_media",
+    "velmedia_ms", "hay_evento", "es_festivo", "sensor_down"
+  ],
+  "train_ini_global": "2026-01-09",
+  "ventana_max_anos": 2,
+  "ciudad": {
+    "_comment": "Coordenadas del centro del municipio (para asignar eventos por radio).",
+    "lat": 42.3439,
+    "lon": -3.7038
+  },
+  "radio_eventos_km": 1.0,
+  "umbral_sol": 0.60,
+  "festivos_locales": {
+    "2025-06-29": "San Pedro y San Pablo",
+    "2026-06-29": "San Pedro y San Pablo",
+    "2027-06-29": "San Pedro y San Pablo"
+  }
+}
